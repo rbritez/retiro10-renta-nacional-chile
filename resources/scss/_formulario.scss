@@ -1,0 +1,312 @@
+#pantallas-formulario  {
+   // background-color: #E8E8E8;
+    //background-color: $secondary;
+    padding:20px 0px;
+    min-height: 100vh;
+    background-image: url('../images/bg-blanco.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.form-wrap-sm{
+    max-width: 700px;
+    margin:0 auto;
+    width: 100%;
+}
+
+
+#paso-1 {
+    .tab-pane {
+        padding: 20px;
+    }
+    .card-body {
+        padding-top:25px;
+    }
+    .nav.nav-tabs {
+        flex-wrap: nowrap;
+    }
+    
+    .nav-tabs .nav-link {
+        font-weight: 700;
+        text-align: center;
+        color:$gray-700;
+        @include min-md {
+            min-width: 50%;
+    
+        }
+    
+    }
+    
+    .nav-tabs .nav-link.active, 
+    .nav-tabs .nav-item.show .nav-link {
+        color:$primary;
+    }
+}
+
+#paso-3 {
+    .form-group {
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+}
+
+.card-formulario {
+    box-shadow:$shadow-lg;
+    border-radius:  $border-card-sm;
+    border-width: 0px;
+    .page-title {
+        font-size: 1.6rem;
+    }
+    .form-title, h4, h5 {
+        font-size:1rem;
+        font-weight: 700;
+    }
+}
+.paso-title {
+    font-size: 1.2rem;
+    color: $dark;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 50px;
+}
+
+.card-mensaje  {
+    box-shadow: $shadow-lg;
+    border: 0px;
+    border-radius: $border-card;
+    .icon-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0px;
+        font-size: 2rem;
+    }
+    .icon-wrap.success span{
+        font-size: 4rem;
+        color: var(--green);
+    }
+    .icon-wrap.error span{
+        font-size: 4rem;
+        color: var(--warning);
+    }
+}
+
+.mensaje-paso {
+    border-left: 9px solid $secondary;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-radius: 7px;
+    box-shadow: $shadow;
+
+}
+
+.card-title-informativo {
+    font-size: 1.1rem;
+    span {
+        font-size: 1.3em;
+    }
+}
+
+span.numero {
+    margin-right: 15px;
+    font-size: 1em;
+    color:white;
+    background-color: $secondary;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.steps {
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 40px auto;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;   
+    &:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #d1ecf1;
+        bottom: 50px;
+        left: 60px;
+        width: calc(250px - 120px);
+        @include min-sm {
+            width: calc(300px - 120px);
+        }
+    }
+
+}
+.step-number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #b1b1b1;
+    text-align: center;
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+}
+.step-text {
+    font-size: .9em;
+    margin-top:5px
+}
+.step-item.active .step-number {
+    background-color: $secondary;
+
+}
+
+
+.botonera {
+    display: flex;
+    flex-direction: column;
+    @include min-md {
+        flex-direction: row-reverse;
+
+    }
+    &-centrada {
+        @include min-md {
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+    }
+}
+.botonera-centrada .btn{
+    align-self: center;
+}
+
+
+.form-control {
+    height: 50px;
+}
+.form-check-label {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+#form-check-monto-variable {
+    display: flex;
+    align-content: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include min-md {
+        flex-wrap: nowrap;
+    }
+    input[type="radio"] {
+        top: 14px;
+    }
+    label {
+        line-height: 49px;
+    }
+    .input-group {
+        width: 200px;
+        flex-wrap: nowrap;
+        height: auto;
+        margin-top: 8px;
+        margin-left:20px;
+    }
+}
+
+
+.tooltip-btn {
+    color: $dark;
+    margin-left: 5px;
+    display: inline-block;
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
+}
+
+.anulacion-condiciones-list {
+    li {
+        display: flex;
+    }
+    span.material-icons {
+        max-width: 30px;
+        color:var(--success);
+    }
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+}
+
+.condiciones {
+    ul {
+        padding-left:20px;
+    }
+    li {
+        margin-bottom: .8rem;
+    }
+}
+
+
+.table-informacion-retiro {
+    td {
+        width:50%;
+    }
+}
+
+.form-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    span.material-icons {
+        margin-right: 5px;
+        font-size:120%;
+        color:$dark;
+    }
+}
+
+@media print {
+    .botonera-centrada {
+        display: none;
+    }
+    .logo-print {
+        background-image: url('../images/logo-renta-sm.svg');
+        background-size: 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 80px;
+        width: 150px;
+        margin:0 auto;
+        position:relative;
+        display: block;
+    }
+    .container {
+        width:100%;
+    }
+    #pantallas-formulario {
+        background-image: none;
+        background-color: white;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+}

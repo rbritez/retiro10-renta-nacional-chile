@@ -1,0 +1,60 @@
+.btn {
+    font-weight: bold;
+    line-height: 2;
+    border-radius: 14px;
+    border-width: 2px;
+}
+
+.btn-main {
+    min-height: 73px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.btn-accordion {
+    display: flex;
+    justify-content: space-between;
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
+}
+
+.btn-regresar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover, &:active, &:focus {
+        background-color: #ffeaea;
+        color:$primary;
+        text-decoration: none;
+    }
+}
+
+.btn-accordion {
+    color: $dark;
+    span.material-icons {
+        color:$primary;
+    }
+    &:hover, &:active, &:focus {
+        color:$primary
+    }
+}
+
+.link-regresar {
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    margin-bottom:1rem;
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
+}
+
+.link-regresar:hover .material-icons,
+.link-regresar:active .material-icons,
+.link-regresar:focus .material-icons{
+    text-decoration: none;
+}

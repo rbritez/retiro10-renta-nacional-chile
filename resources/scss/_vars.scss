@@ -1,0 +1,77 @@
+$sans-serif: 'Open Sans', sans-serif;
+$border-card:       30px;
+$border-card-sm:    18px;
+$shadow:    0px 0px 12px 0px rgb(138 138 138 / 50%);
+$shadow-lg: 0px 0px 32px 0px rgb(177 177 177 / 51%);
+//$slab-serif: 'Roboto Slab', serif;
+
+
+// Bootstrap_override & gob override
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1180px
+);
+$custom-container-max-width: (
+  lg: 960px,
+  xl: 1180px
+);
+
+
+//Screen sizes
+$screen-extra-small: 320px;
+//bootstraps 4 breaks point - 
+$screen-small: 576px;
+$screen-middle: 768px;
+$screen-large: 992px;
+$screen-extralarge: 1200px;
+$screen-hd: 1900px;
+
+
+$element-size-sm: 1em;
+$element-size-md: 1.5em;
+$element-size-lg: 2em;
+$element-size-xl: 4em; 
+
+// Extra Small devices (landscape phones, 320 and up)
+@mixin min-xs {
+    @media (min-width: $screen-extra-small) {
+        @content;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin min-sm {
+    @media (min-width: $screen-small) {
+        @content;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin min-md {
+    @media (min-width: $screen-middle) {
+        @content;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin min-lg {
+    @media (min-width: $screen-large) {
+        @content;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@mixin min-xl {
+    @media (min-width: $screen-extralarge) {
+        @content;
+    }
+}
+
+@mixin min-hd {
+    @media (min-width: $screen-hd) {
+        @content;
+    }
+}

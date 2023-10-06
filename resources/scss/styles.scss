@@ -1,0 +1,25 @@
+// Colors
+$red:#D9262E;
+$teal: #1DB5B8;
+$dark: #1c3144;
+
+$primary: $red;
+$secondary: $teal;
+$fa-font-path: "./../webfonts/";
+
+//holatest
+@import "vars";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+//@import "/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "fonts";
+
+@import "general";
+@import "header";
+@import "footer";
+@import "landing";
+@import "inicio-retiro";
+
+@import "botones";
+@import "formulario";
+
+

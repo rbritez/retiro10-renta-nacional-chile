@@ -1,0 +1,20 @@
+header {
+    background-color: white;
+    box-shadow: -2px 1px 11px rgb(163 163 163 / 50%);
+    z-index: 99;
+    position: relative;
+}
+
+header.landing {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px
+}
+.navbar {
+    padding: 0px;
+}
+
+.navbar-brand {
+    padding: 0px 15px;
+}

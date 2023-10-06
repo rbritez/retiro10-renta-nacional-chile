@@ -1,0 +1,3 @@
+<div class="post-footer" style="background: #f3f3f3 !important; padding: 15px;">
+    <p class="disclamer" style="Margin: 0; Margin-bottom: 10px; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 1.3; margin: 0; margin-bottom: 0px; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; text-align: center;">Este correo fue enviado por medio del sitio web de Renta Nacinal. <br> Amunátegui 178 piso 1 Casa Matriz - Teléfono: 2 26700202 <br> Mail: servicioalcliente@rentanacional.cl</p>
+</div>   

@@ -1,0 +1,1 @@
+<p class="color-dark text-center footer-footnote mt-3">Sitio web optimizado para la última versión de Chrome, Firefox</p>

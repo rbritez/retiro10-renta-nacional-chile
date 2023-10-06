@@ -1,0 +1,9 @@
+.footer-footnote {
+    &.color-white {
+        color:white;
+
+    }
+    &.color-dark {
+        color:$dark;
+    }
+}

@@ -1,0 +1,77 @@
+#retiro-inicio {
+    padding: 50px 0 50px 0px;
+    background-color: $primary;
+    min-height: 100vh;
+}
+
+.card.card-retiro-opciones {
+    max-width: 400px;
+    margin: 50px auto;
+    border: 0;
+    box-shadow: $shadow;
+    border-radius: $border-card;
+}
+
+.col-retiro-opciones .alert {
+    max-width: 400px;
+    margin: 50px auto; 
+}
+
+#inicio-proceso {
+    background-image: url('../images/banner-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 33vh;
+}
+
+
+.card-relevante {
+    height: 100%;
+    border: 0px;
+    box-shadow: 0px 0px 1rem rgb(221 221 221 / 50%);
+    /* border-top-left-radius: 30px; */
+    /* border-top-right-radius: 30px; */
+    border-radius:$border-card - 10px;
+
+    .card-header:first-child {
+        background-color: $secondary;
+        font-size: 1rem;
+        font-weight: 800;
+        color: white;
+        text-align: center;
+        border-top-right-radius:$border-card - 10px;
+        border-top-left-radius:$border-card - 10px;
+    }
+}
+
+.tabla-retiro td{
+    width:50%;
+}
+.ley-completa {
+    .fetured {
+        font-weight: 800;
+        margin: 50px 0px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+#home-ayuda .featured {
+    font-weight: 800;
+    margin: 50px 0px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.card-relevante {
+    .card-title {
+        margin-top:0.75rem;
+    }
+}
+
+.carta {
+    text-align: justify;
+}
